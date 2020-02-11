@@ -9,8 +9,6 @@ import org.springframework.context.ApplicationContext;
 public class SfgDiApplication {
 
 	public static void main(String[] args) {
-
-		System.out.println("test");
 		ApplicationContext ctx = SpringApplication.run(SfgDiApplication.class, args);
 
 		PetController petController = ctx.getBean("petController", PetController.class);
